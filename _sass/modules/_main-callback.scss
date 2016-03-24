@@ -1,0 +1,60 @@
+.main-callback {
+    background: url(../img/form-bg.jpg) no-repeat;
+    background-size: cover;
+    &__wrap {
+        @include clearfix;
+    }
+    &__form {
+        float: right;
+    }
+    &__descript {
+        width: 350px;
+        font-size: 18px;
+        color: #fff;
+        margin-top: -4px;
+        float: left;
+        margin-right: 30px;
+    }
+    &__title {
+        font-family: "Roboto Regular";
+        text-transform: uppercase;
+        a {
+            color: #fff;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// callback form
+.callback {
+    width: 580px;
+    &__inp {
+        width: 560px;
+        padding: 0 10px;
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 10px;
+        border: none;
+        background: rgba(255,255,255,.1);
+        color: #fff;
+        font-size: 18px;
+        &:focus {
+            box-shadow: 0 0 0 1px #fff;
+        }
+    }
+    &__textarea {
+        width: 560px;
+        height: 120px;
+        padding: 5px 10px;
+        border: none;
+        background: rgba(255,255,255,.1);
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 14px;
+        &:focus {
+            box-shadow: 0 0 0 1px #fff;
+        }
+    }
+}

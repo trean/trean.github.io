@@ -1,0 +1,62 @@
+// base button
+.btn {
+    display: inline-block;
+    padding: 0 20px;
+    height: 45px;
+    line-height: 45px;
+    border: 3px solid $default-btn;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-family: "Roboto Regular";
+    font-size: 18px;
+    color: darken($default-btn, 10%);
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    background: transparent;
+    &:hover {
+        height: 51px;
+        line-height: 51px;
+        border: none;
+        background: $default-btn;
+        @include linear-gradient(90deg, darken($default-btn, 20%) 0%, lighten($default-btn, 20%) 100%);
+        color: #fff;
+        padding: 0 23px;
+    }
+    &:active {
+        @include linear-gradient(90deg, lighten($default-btn, 20%) 0%, darken($default-btn, 20%) 100%);
+    }
+    &_b {
+        height: 51px;
+    }
+    &_done {
+        border-color: $done-btn;
+        color: darken($done-btn, 10%);
+        &:hover {
+            height: 51px;
+            line-height: 51px;
+            border: none;
+            background: $done-btn;
+            @include linear-gradient(90deg, darken($done-btn, 20%) 0%, lighten($done-btn, 20%) 100%);
+            color: #fff;
+        }
+        &:active {
+            @include linear-gradient(90deg, lighten($done-btn, 20%) 0%, darken($done-btn, 20%) 100%);
+        }
+    }
+    &_cancel {
+        border-color: $cancel-btn;
+        color: darken($cancel-btn, 10%);
+        &:hover {
+            height: 51px;
+            line-height: 51px;
+            border: none;
+            background: $cancel-btn;
+            @include linear-gradient(90deg, darken($cancel-btn, 20%) 0%, lighten($cancel-btn, 20%) 100%);
+            color: #fff;
+        }
+        &:active {
+            @include linear-gradient(90deg, lighten($cancel-btn, 20%) 0%, darken($cancel-btn, 20%) 100%);
+        }
+    }
+}

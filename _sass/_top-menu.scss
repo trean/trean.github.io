@@ -1,0 +1,38 @@
+.top-menu {
+    float: right;
+    padding: 23px 0;
+    .top-menu-wrapper {
+        margin: 0;
+
+        list-style: none;
+        .top-menu-item {
+            float: left;
+
+            margin-left: 40px;
+            a {
+                font-family: 'Roboto Light';
+                // font-weight: 600;
+                font-size: 20px;
+                line-height: 20px;
+
+                color: #a4a4a4;
+                text-decoration: none;
+                text-transform: uppercase;
+                outline: none;
+                &:visited {
+                	color: #a4a4a4;
+                }
+                &:hover {
+                	color: #1bbc9b;
+                }
+                &:active {
+                	color: lighten(#1bbc9b, 20%);
+                }
+                &.act {
+                	color: #1bbc9b;
+                	text-decoration: underline;
+                }
+            }
+        }
+    }	
+}

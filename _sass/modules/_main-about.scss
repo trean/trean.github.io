@@ -1,0 +1,76 @@
+.main-about {
+    line-height: 28px;
+    font-size: 18px;
+    &__items-wrap {
+        margin-right: -33px;
+        overflow: hidden;
+    }
+    &__btn {
+        text-align: center;
+    }
+}
+
+// BLOKS
+//summary
+.summary {
+    overflow: hidden;
+    margin-bottom: 30px;
+    &__photo {
+        float: left;
+        margin-right: 40px;
+        margin-bottom: 30px;
+    }
+    &__text {
+        width: 740px;
+        // text-align: justify;
+        float: right;
+    }
+}
+
+// circle photo
+.circle-photo {
+    width: 180px;
+    height: 180px;
+    &__img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+}
+
+// text item
+.text-item {
+    width: 290px;
+    margin-right: 41px;
+    //text-align: justify;
+    // float: left;
+    margin-bottom: 30px;
+    &_1 {
+        width: 600px;
+        padding-right: 460px;
+        background: url(../img/bottom-arr.png) no-repeat;
+        background-position: 70% 70%;
+        text-align: center;
+    }
+    &_2 {
+        width: 750px;
+        padding-left: 260px;
+        padding-bottom: 70px;
+        background: url(../img/right-arr.png) no-repeat;
+        background-position: 0 bottom;
+        // float: right;
+        text-align: center;
+    }
+    &_3 {
+        width: 700px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: -50px;
+        margin-bottom: 50px;
+    }
+    &__title {
+        font-family: "Roboto Regular";
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+}

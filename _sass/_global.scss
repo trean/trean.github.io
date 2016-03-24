@@ -1,0 +1,28 @@
+body {
+    font-family: "Roboto Light";
+    color: $default-txt;
+    overflow-y: scroll;
+}
+
+#wrapper {
+    width: 100%;
+    overflow: hidden;
+    .container {
+        width: 960px;
+        margin: 0 auto;
+    }
+}
+
+.line {
+    width: 960px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+p {
+    margin: 0 0 24px;
+}
+
+a {
+    color: $links;
+}
