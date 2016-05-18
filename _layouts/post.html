@@ -25,7 +25,7 @@ permalink: /all-posts/
                     document.write(VK.Share.button({
                         url: 'treancycle.ru',
                         title: '{{ page.title }}',
-                        description:'Какого количества камней, сложенных вместе, будет достаточно для того, чтобы считать эти камни кучей?',
+                        description:'{{ post.excerpt | strip_html }}',
                         image: '{{ page.image }}',
                         noparse: true
                     }));

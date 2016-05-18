@@ -8,61 +8,28 @@ layout: default
 <div class="main-articles">
     <div class="main-articles__wrap line">
         {% for post in site.posts limit:4 %}
-        <a href="{{ post.url | prepend: site.baseurl }}" class="card"><img src="{{ post.image }}" alt="" class="card__photo">
-            <div class="card__date">{{ post.date | date: "%b %d, %Y" }}</div>
-            <div class="card__info">
-                <p class="card__info-title">{{ post.title }}</p>
-                <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-            </div>
-        </a>  
+        {% include post-card.html %}
         {% endfor %}
-        <div class="main-articles__btn"><a href="all-notes" class="btn">Все статьи</a></div>
+        <!-- <div class="main-articles__btn"><a href="all-notes" class="btn">Все статьи</a></div> -->
     </div>
 </div>
-<div class="head1">
-    <div class="head1-container">Куда Вы попали?</div>
-</div>
-<div class="main-about line">
-    <div class="main-about__summary summary">
-        <div class="summary__photo circle-photo"><img src="img/myAvatar.png" class="circle-photo__img"></div>
-        <div class="summary__text"> 
-            <p>Industrial grade wonton soup dolphin sunglasses warehouse semiotics paranoid neon nano-garage BASE jump. Knife chrome pre-corrupted motion soul-delay sprawl shanty town cardboard table grenade weathered augmented reality decay city. </p>
-            <p>Shrine pistol network corrupted weathered meta-drone savant Kowloon. Saturation point faded pen courier hacker bomb spook j-pop jeans papier-mache Kowloon.</p>
-        </div>
-    </div>
-    <div class="main-about__items-wrap">
-        <div class="text-item text-item_1">
-            <div class="text-item__title">Что я здесь делаю</div>
-            <div class="text-item__descript">Neon Tokyo ablative network vehicle BASE jump tank-traps. Boy San Francisco bridge neural market courier RAF military-grade man savant. City corrupted shrine realism order-flow voodoo god nodal point. Neon Tokyo ablative network vehicle BASE jump tank-traps. Boy San Francisco bridge neural market courier RAF military-grade man savant. City corrupted shrine realism order-flow voodoo god nodal point.</div>
-        </div>
-        <div class="text-item text-item_2">
-            <div class="text-item__title">Чем я интересуюсь</div>
-            <div class="text-item__descript">8-bit drone euro-pop apophenia tattoo cartel advert. Tube post-rebar narrative order-flow Chiba kanji vehicle film refrigerator. Towards tube shanty town smart-face forwards motion car Shibuya numinous fetishism kanji. Construct cartel advert office smart-apophenia garage man lights-ware savant. Crypto-nodal point bicycle voodoo god disposable apophenia youtube assault smart-long-chain hydrocarbons. </div>
-        </div>
-        <div class="text-item text-item_3">
-            <div class="text-item__title">Что я умею</div>
-            <div class="text-item__descript">Table physical knife DIY dissident sentient digital lights convenience store. Monofilament courier digital fetishism otaku urban cyber-dolphin dead weathered city face forwards cardboard lights denim table. Knife fetishism apophenia nano-sentient film bicycle decay futurity plastic. Nodal point post-A.I. engine concrete corrupted spook cartel table drugs cardboard nano-weathered sprawl plastic jeans footage. </div>
-        </div>
-    </div>
-    <!-- <div class="main-about__btn"><a href="#" class="btn">Найти меня</a></div> -->
-</div>
+
 <div class="head1">
     <div class="head1-container">Напишите мне</div>
 </div>
 <div class="main-callback">
     <div class="main-callback__wrap line">
         <div class="main-callback__descript">
-            <p class="main-callback__title">Alcohol wonton soup youtube</p>
-            <p>Cardboard shrine silent vinyl shoes realism tiger-team augmented reality euro-pop singularity j-pop voodoo god.</p>
-            <p>Soul-delay cardboard office boat construct wonton soup hotdog pistol city industrial grade receding assault range-rover tower faded. Rebar 3D-printed market systema tower uplink toward.</p>
+            <p class="main-callback__title">Напишите мне</p>
+            <p>Если вы хотите задать вопрос, дать совет, лично что-то прокоментировать, а так же заказать верстку лэндинга, сайта и т.д. заполните, пожалуйста, форму.</p>
         </div>
         <script type="text/javascript">var submitted=false;</script>
         <iframe onload="if(submitted) {window.location='http://';}" style="display:none;" id="hidden_iframe" name="hidden_iframe"></iframe>
         <form class="main-callback__form callback" onsubmit="submitted=true;" target="hidden_iframe" id="ss-form" method="POST" action="https://docs.google.com/forms/d/1Lr91fyPbjtniAyOXhFmha-jp4r1nsnKq9FwllCl0lok/formResponse">
-            <input placeholder="Ваше имя" type="text" title="" required="" aria-required="true" aria-label="Ваше имя  " dir="auto" id="entry_1322216825" class="ss-q-short callback__inp" value="" name="entry.1322216825">
-            <input placeholder="E-mail" type="e-mail" title="" required="" aria-required="true" aria-label="E-mail  " dir="auto" id="entry_2140367745" class="ss-q-short  callback__inp" value="" name="entry.2140367745">
+            <input placeholder="Ваше имя *" type="text" title="" required="" aria-required="true" aria-label="Ваше имя  " dir="auto" id="entry_1322216825" class="ss-q-short callback__inp" value="" name="entry.1322216825">
+            <input placeholder="E-mail *" type="e-mail" title="" required="" aria-required="true" aria-label="E-mail  " dir="auto" id="entry_2140367745" class="ss-q-short  callback__inp" value="" name="entry.2140367745">
             <input placeholder="Город" type="text" title="" aria-label="Город  " dir="auto" id="entry_1565367951" class="ss-q-short  callback__inp" value="" name="entry.1565367951">
-            <textarea placeholder="Ваш комментарий" required="" aria-required="true" aria-label="Ваш комментарий  " dir="auto" id="entry_1716195271" class="ss-q-long  callback__textarea" cols="0" rows="8" name="entry.1716195271"></textarea>
+            <textarea placeholder="Ваш комментарий *" required="" aria-required="true" aria-label="Ваш комментарий  " dir="auto" id="entry_1716195271" class="ss-q-long  callback__textarea" cols="0" rows="8" name="entry.1716195271"></textarea>
             <input type="hidden" value="[,,&quot;-5465193309207296806&quot;]
             " name="draftResponse">
             <input type="hidden" value="0" name="pageHistory">

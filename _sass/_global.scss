@@ -26,3 +26,20 @@ p {
 a {
     color: $links;
 }
+
+table.table {
+    width: 100%;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    tr {
+        th {
+            border: 1px solid #c4c4c4;
+            background: #f1f1f1;
+            padding: 6px;
+        }
+        td {
+            border: 1px solid #c4c4c4;
+            padding: 6px;
+        }
+    }
+}

@@ -7,14 +7,9 @@ permalink: /js-notes/
 </div>
 <div class="main-articles">
     <div class="main-articles__wrap line">
+        <p style="font-size: 130%;">В этой категории еще нет публикаций.</p>
         {% for post in site.categories.js-notes %}
-        <a href="{{ post.url | prepend:jste.baseurl }}" class="card"><img src="{{ post.image }}" alt="" class="card__photo">
-            <div class="card__date">{{ post.date | date: "%b %d, %Y" }}</div>
-            <div class="card__info">
-                <p class="card__info-title">{{ post.title }}</p>
-                <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-            </div>
-        </a>  
+        {% include post-card.html %}
         {% endfor %}
     </div>
 </div>  

@@ -681,6 +681,18 @@ p {
 a {
   color: #2CA37B; }
 
+table.table {
+  width: 100%;
+  margin-bottom: 24px;
+  box-sizing: border-box; }
+  table.table tr th {
+    border: 1px solid #c4c4c4;
+    background: #f1f1f1;
+    padding: 6px; }
+  table.table tr td {
+    border: 1px solid #c4c4c4;
+    padding: 6px; }
+
 .top-menu {
   float: right;
   padding: 35px 0; }
@@ -932,8 +944,12 @@ a {
       text-decoration: underline; }
   .card:nth-of-type(2n) {
     margin-right: 0; }
+  .card__photo-wrap {
+    height: 210px;
+    text-align: center;
+    overflow: hidden; }
   .card__photo {
-    width: 100%;
+    width: auto;
     height: 210px; }
   .card__date {
     background: #f1f1f1;

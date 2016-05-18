@@ -30,8 +30,13 @@
     &:nth-of-type(2n) {
         margin-right: 0;
     }
+    &__photo-wrap {
+        height: 210px;
+        text-align: center;
+        overflow: hidden;
+    }
     &__photo {
-        width: 100%;
+        width: auto;
         height: 210px;
     }
     &__date {

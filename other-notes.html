@@ -9,13 +9,7 @@ permalink: /other-notes/
     <div class="main-articles__wrap line">
         <p style="font-size: 130%;">Здесь будут посты с размышлениями на свободную тему.</p>
         {% for post in site.categories.othernotes %}
-        <a href="{{ post.url | prepend: site.baseurl }}" class="card"><img src="{{ post.image }}" alt="" class="card__photo">
-            <div class="card__date">{{ post.date | date: "%b %d, %Y" }}</div>
-            <div class="card__info">
-                <p class="card__info-title">{{ post.title }}</p>
-                <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-            </div>
-        </a>  
+        {% include post-card.html %}
         {% endfor %}
     </div>
 </div>  
