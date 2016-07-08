@@ -420,6 +420,11 @@ th {
 @font-face {
   font-family: "Vtks Hunt";
   src: url("../fonts/VtksHunt.ttf"); }
+/* $xlg: 1280px; */
+/* $lg: 1000px; */
+/* $md: 800px; */
+/* $sm: 640px; */
+/* $xsm: 320px; */
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
 
@@ -693,52 +698,66 @@ table.table {
     border: 1px solid #c4c4c4;
     padding: 6px; }
 
+.link_inherit {
+  color: inherit;
+  text-decoration: inherit; }
+
+.logo {
+  margin: 10px 0; }
+
 .top-menu {
-  float: right;
-  padding: 35px 0; }
-  .top-menu .top-menu-wrapper {
-    margin: 0;
-    list-style: none; }
-    .top-menu .top-menu-wrapper .top-menu-item {
-      float: left;
-      margin-left: 40px; }
-      .top-menu .top-menu-wrapper .top-menu-item a {
-        display: block;
-        font-family: 'Roboto Light';
-        font-size: 20px;
-        line-height: 20px;
-        color: #a4a4a4;
-        text-decoration: none;
-        text-transform: uppercase;
-        outline: none;
-        position: relative; }
-        .top-menu .top-menu-wrapper .top-menu-item a:visited {
-          color: #a4a4a4; }
-        .top-menu .top-menu-wrapper .top-menu-item a:hover, .top-menu .top-menu-wrapper .top-menu-item a.act {
-          color: #1bbc9b;
-          position: relative; }
-          .top-menu .top-menu-wrapper .top-menu-item a:hover:after, .top-menu .top-menu-wrapper .top-menu-item a.act:after {
-            content: "";
-            display: block;
-            width: 110%;
-            height: 5px;
-            background: #1bbc9b;
-            position: absolute;
-            top: -35px;
-            left: -5%;
-            right: -5%; }
-        .top-menu .top-menu-wrapper .top-menu-item a:active {
-          color: #56e7c9; }
-        .top-menu .top-menu-wrapper .top-menu-item a.act {
-          color: #1bbc9b; }
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px 0 21px;
+  margin: 0;
+  list-style: none; }
+  @media (max-width: 1000px) {
+    .top-menu:before {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 32px;
+      background: url(../img/icons/menu.png);
+      cursor: pointer; } }
+  .top-menu__item {
+    margin-left: 40px;
+    font-family: 'Roboto Light';
+    font-size: 1.25em;
+    color: #a4a4a4;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none; }
+    @media (max-width: 1000px) {
+      .top-menu__item {
+        display: none; } }
+    .top-menu__item:hover {
+      position: relative;
+      color: #1bbc9b; }
+      .top-menu__item:hover:before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background: #1bbc9b;
+        position: absolute;
+        top: -25px; }
+    .top-menu__item:active {
+      color: #56e7c9; }
+    .top-menu__item_act {
+      color: #1bbc9b;
+      position: relative; }
+      .top-menu__item_act:before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background: #1bbc9b;
+        position: absolute;
+        top: -25px; }
 
 .header {
+  display: flex;
+  justify-content: space-between;
   padding: 0 50px;
   overflow: hidden; }
-  .header .logo {
-    margin-top: 15px;
-    width: 250px;
-    float: left; }
 
 .btn {
   display: inline-block;
@@ -803,40 +822,6 @@ table.table {
       background-color: #e7cece;
       background-image: -webkit-linear-gradient(-360deg, #e7cece 0%, #9d4c4c 100%);
       background-image: linear-gradient(90deg,#e7cece 0%, #9d4c4c 100%); }
-
-.slider-at-mine {
-  width: 100%;
-  height: 550px;
-  position: relative; }
-  .slider-at-mine img {
-    width: auto;
-    height: 550px; }
-  .slider-at-mine .slider-at-mine-title {
-    width: 500px;
-    height: 330px;
-    text-align: center;
-    background: #fff;
-    position: absolute;
-    z-index: 9999;
-    color: #4d4d4d;
-    padding: 40px 20px;
-    top: 0;
-    left: 10%;
-    border-top: 10px solid #5abe9d;
-    font-size: 22px;
-    box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2); }
-    .slider-at-mine .slider-at-mine-title p {
-      margin: 0 0 15px;
-      font-family: "Roboto Bold";
-      font-size: 40px; }
-  .slider-at-mine .owl-controls .owl-nav .owl-prev, .slider-at-mine .owl-controls .owl-nav .owl-next {
-    position: absolute;
-    color: #fff;
-    bottom: -250px; }
-  .slider-at-mine .owl-controls .owl-nav .owl-prev {
-    left: 20px; }
-  .slider-at-mine .owl-controls .owl-nav .owl-next {
-    right: 20px; }
 
 .head1 {
   background: #5ABE9D;

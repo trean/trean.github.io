@@ -1,27 +1,4 @@
-// .head1 {
-//     background: #5ABE9D;
-//     padding: 15px;
-//     div.head1-container {
-//         width: 960px;
-//         margin: 0 auto;
-//         font-family: "Roboto Bold";
-//         font-size: 20px;
-//         line-height: 20px;
-//         color: #fff;
-//         text-transform: uppercase;
-//         position: relative;
-//         &:after {
-//             content: "";
-//             display: block;
-//             @include triangle(20px, #5ABE9D, down);
-//             position: absolute;
-//             bottom: -24px;
-//             left: 50px;
-//             z-index: 10;
-//         }
-//     }
-// }
-
+// Header for first level
 .head1 {
     background: #5ABE9D;
     padding: 15px;

@@ -25,13 +25,13 @@ function posFuter () {
 }
 
 function activMenuItem () {
-  var topMenuItem = $('.top-menu > ul > li > a');
+  var topMenuItem = $('.top-menu > li > a');
   topMenuItem.each(function(index, el) {
     var menuItemHref = $(this).attr('href');
     if ((window.location.href.indexOf(menuItemHref) > -1) && menuItemHref != '/') {
-      $(this).addClass('act');
+      $(this).parent().addClass('top-menu__item_act');
     } else if (window.location.pathname === '/') {
-      topMenuItem.first().addClass('act');
+      topMenuItem.first().parent().addClass('top-menu__item_act');
     }
   });
  //  console.log(menuItemHref);

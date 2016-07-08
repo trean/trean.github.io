@@ -1,0 +1,10 @@
+@import "logo";
+@import "top-menu";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  overflow: hidden;
+}
+

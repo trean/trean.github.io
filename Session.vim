@@ -3,60 +3,62 @@ if &cp | set nocp | endif
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/
+cd ~/myblog/_sass
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +3 myblog/_includes/breadcrumbs.html
-badd +8 myblog/_posts/2016-03-11-welcome-to-jekyll.markdown
-badd +10 myblog/_posts/2016-03-26-Анимированный\ герой\ мультфильма\ с\ использованием\ SASS.markdown
-badd +10 myblog/_posts/2016-03-26-animated-mult-hero-with-sass.markdown
-badd +23 myblog/_posts/2016-02-16-jekyll.markdown
-badd +6 myblog/_posts/welcomel.markdown
-badd +4 myblog/_posts/2015-02-27-to-jekyll.markdown
-badd +5 myblog/_posts/2016-03-03-welcomel.markdown
-badd +11 myblog/_layouts/post.html
-badd +19 myblog/_layouts/default.html
-badd +11 myblog/index.html
-badd +0 myblog/_sass/modules/_articles-cards.scss
-badd +11 myblog/css-notes.html
-badd +10 myblog/_includes/post-card.html
-badd +10 myblog/js-notes.html
-badd +12 myblog/all-notes.html
-badd +10 myblog/linux-notes.html
-badd +13 myblog/other-notes.html
-badd +5 myblog/about.md
+badd +1 _header.scss
+badd +38 _global.scss
+badd +22 ~/myblog/_config.yml
+badd +2 config.yaml
+badd +1 ~/myblog/sassdoc/config.yaml
+badd +8 bourbon/functions/_is-number.scss
+badd +15 bourbon/functions/_modular-scale.scss
+badd +8 bourbon/functions/_px-to-rem.scss
+badd +1 bourbon/functions/_is-length.scss
+badd +19 bourbon/css3/_keyframes.scss
+badd +1 _main.scss
+badd +12 app.scss
+badd +10 modules/_header.scss
+badd +5 modules/_logo.scss
+badd +20 modules/_top-menu.scss
+badd +36 ~/myblog/js/project.js
+badd +4 ~/myblog/.gitignore
+badd +1 ~/myblog/CNAME
+badd +12 ~/myblog/css-notes.html
+badd +35 ~/myblog/index.html
+badd +19 ~/myblog/_layouts/default.html
+badd +8 ~/myblog/_includes/header.html
+badd +7 modules/_link.scss
+badd +0 _variables.scss
+badd +2 _breakpoints.scss
+badd +1 _breackpoints.scss
+badd +0 _icons.scss
 argglobal
 silent! argdel *
-set stal=2
-edit myblog/_posts/2016-03-26-animated-mult-hero-with-sass.markdown
+edit modules/_top-menu.scss
 set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd _ | wincmd |
+split
+1wincmd k
+wincmd w
+wincmd w
+wincmd _ | wincmd |
+split
+wincmd _ | wincmd |
+split
+2wincmd k
+wincmd w
+wincmd w
 set nosplitbelow
 set nosplitright
 wincmd t
 set winheight=1 winwidth=1
-argglobal
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=999
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-let s:l = 5 - ((4 * winheight(0) + 24) / 48)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-5
-normal! 024|
-tabedit myblog/_sass/modules/_articles-cards.scss
-set splitbelow splitright
-set nosplitbelow
-set nosplitright
-wincmd t
-set winheight=1 winwidth=1
+wincmd =
 argglobal
 setlocal fdm=marker
 setlocal fde=0
@@ -66,20 +68,16 @@ setlocal fdl=999
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 7 - ((4 * winheight(0) + 24) / 48)
+let s:l = 16 - ((14 * winheight(0) + 12) / 24)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-7
-normal! 028|
-tabedit myblog/index.html
-set splitbelow splitright
-set nosplitbelow
-set nosplitright
-wincmd t
-set winheight=1 winwidth=1
+16
+normal! 026|
+wincmd w
 argglobal
-setlocal fdm=indent
+edit modules/_logo.scss
+setlocal fdm=marker
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
@@ -87,25 +85,66 @@ setlocal fdl=999
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-9
-normal! zo
-47
-normal! zo
-48
-normal! zo
-let s:l = 58 - ((24 * winheight(0) + 24) / 48)
+let s:l = 3 - ((2 * winheight(0) + 7) / 15)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-58
-let s:c = 51 - ((41 * winwidth(0) + 79) / 158)
-if s:c > 0
-  exe 'normal! ' . s:c . '|zs' . 51 . '|'
-else
-  normal! 051|
-endif
-tabnext 3
-set stal=1
+3
+normal! 05|
+wincmd w
+argglobal
+edit _variables.scss
+setlocal fdm=marker
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=999
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 14 - ((4 * winheight(0) + 4) / 8)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+14
+normal! 022|
+wincmd w
+argglobal
+edit _breakpoints.scss
+setlocal fdm=marker
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=999
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 17 - ((7 * winheight(0) + 4) / 9)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+17
+normal! 043|
+wincmd w
+argglobal
+edit _icons.scss
+setlocal fdm=marker
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=999
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 70 - ((3 * winheight(0) + 10) / 21)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+70
+normal! 023|
+wincmd w
+wincmd =
+tabnext 1
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf
 endif
