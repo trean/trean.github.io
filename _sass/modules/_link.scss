@@ -4,4 +4,10 @@
         color: inherit;
         text-decoration: inherit;
     }
+    // block
+    &_block {
+        display: block;
+        width: inherit;
+        height: inherit;
+    }
 }

@@ -1,0 +1,59 @@
+.mobile-btn {
+    display: none;
+    @include breakpoint(lg) {
+        display: block;
+        width: 32px;
+        height: 32px;
+        margin-top: 50%;
+        transform: translateY(52%);
+        background: url(../img/icons/menu.png);
+        cursor: pointer;
+        //<div>Icons made by <a href="http://www.flaticon.com/authors/hanan" title="Hanan">Hanan</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    }
+}
+.mobile-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    &__title {
+        display: block;
+        height: 73px;
+        line-height: 73px;
+        padding-left: 40px;
+        font-size: 20px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #5abe9d;
+        color: darken(#5abe9d, 10%);
+        font-family: "Roboto Regular";
+        margin-bottom: 10px;
+    }
+    &__item {
+        height: 40px;
+        line-height: 40px;
+        padding-left: 55px;
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #5abe9d;
+            position: absolute;
+            left: 35px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:hover {
+            color: darken(#5abe9d, 14%);
+            background: #fff;
+        }
+        &.act {
+            background: #5abe9d; 
+            color: #fff;
+            &:before {
+                background: #fff;
+            }
+        }
+    }
+}
