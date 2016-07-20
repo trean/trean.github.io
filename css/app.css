@@ -739,7 +739,18 @@ table.table {
   height: inherit; }
 
 .logo {
-  margin: 10px 0; }
+  display: flex;
+  margin: 10px 0;
+  height: 50px; }
+  @media (max-width: 640px) {
+    .logo {
+      max-width: 80%; }
+      .logo a {
+        display: flex;
+        justify-content: space-around; }
+        .logo a img {
+          max-width: 100%;
+          height: auto; } }
 
 .top-menu {
   display: flex;
@@ -784,7 +795,7 @@ table.table {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 0 50px;
+  padding: 0 5%;
   overflow: hidden; }
 
 .mobile-btn {

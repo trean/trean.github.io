@@ -1,3 +1,16 @@
 .logo {
-  margin: 10px 0;
+    display: flex;
+    margin: 10px 0;
+    height: 50px;
+    @include breakpoint(sm) {
+        max-width: 80%;
+        a {
+            display: flex;
+            justify-content: space-around;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
 }
