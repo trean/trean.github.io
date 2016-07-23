@@ -5,9 +5,9 @@
     @include breakpoint(sm) {
         max-width: 80%;
         a {
-            display: flex;
-            justify-content: space-around;
             img {
+                transform: translateY(54%);
+                margin-top: -50%;
                 max-width: 100%;
                 height: auto;
             }

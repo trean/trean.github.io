@@ -3,8 +3,9 @@
     background: #5ABE9D;
     padding: 15px;
     div.head1-container {
-        width: 910px;
+        max-width: 910px;
         margin: 0 auto;
+        padding-left: 40px;
         font-family: "Roboto Regular";
         font-size: 20px;
         line-height: 20px;
@@ -19,7 +20,7 @@
             background: url(../img/clip.png) no-repeat;
             position: absolute;
             top: -23px;
-            left: -60px;
+            left: 0;
             z-index: 10;
         }
     }

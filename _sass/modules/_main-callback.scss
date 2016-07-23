@@ -8,12 +8,16 @@
         float: right;
     }
     &__descript {
-        width: 350px;
+        width: calc(40% - 30px);
         font-size: 18px;
         color: #fff;
         margin-top: -4px;
         float: left;
         margin-right: 30px;
+        @include breakpoint(sm) {
+            width: 100%;
+            margin-right: 0;
+        }
     }
     &__title {
         font-family: "Roboto Regular";
@@ -29,9 +33,12 @@
 
 // callback form
 .callback {
-    width: 580px;
+    width: 60%;
+    @include breakpoint(sm) {
+        width: 100%;
+    }
     &__inp {
-        width: 560px;
+        width: calc(100% - 20px);
         padding: 0 10px;
         height: 40px;
         line-height: 40px;
@@ -45,7 +52,7 @@
         }
     }
     &__textarea {
-        width: 560px;
+        width: calc(100% - 20px);
         height: 120px;
         padding: 5px 10px;
         border: none;

@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Герой мультфильма на SASS"
+title:  "CSS-анимация на примере фигурки героя мультфильма"
 categories: css-notes 
 image: /img/posts/krosh1.jpg
 excerpt_separator: <!--more--> 
 ---
-
+                                                          
 Попробуем воссоздать героя детского мультфильма "Смешарики" средствами CSS. Для начала подберем его изображение, на которое будем ориентироваться. Например, <a href="http://detkamonline.ru/media/icons/2/smeshariki_shkola_tanzev.jpg" target="_blank" rel="nofollow noopener">это</a>. С изображения можно брать цвета, и определить по нему основные блоки для создания фигуры.
 
 <!--more-->
