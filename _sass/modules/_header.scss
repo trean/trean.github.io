@@ -2,7 +2,13 @@
 @import "top-menu";
 
 .header {
+  -o-display: flex;
+  -moz-display: flex;
+  -webkit-display: flex;
   display: flex;
+  -o-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   padding: 0 5%;
   overflow: hidden;

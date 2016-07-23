@@ -743,6 +743,9 @@ table.table {
   height: inherit; }
 
 .logo {
+  -o-display: flex;
+  -moz-display: flex;
+  -webkit-display: flex;
   display: flex;
   margin: 10px 0;
   height: 50px; }
@@ -796,7 +799,13 @@ table.table {
         top: -25px; }
 
 .header {
+  -o-display: flex;
+  -moz-display: flex;
+  -webkit-display: flex;
   display: flex;
+  -o-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   padding: 0 5%;
   overflow: hidden; }
@@ -808,7 +817,6 @@ table.table {
       display: block;
       width: 32px;
       height: 32px;
-      margin-top: 50%;
       transform: translateY(52%);
       background: url(../img/icons/menu.png);
       cursor: pointer; } }
