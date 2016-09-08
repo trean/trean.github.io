@@ -54,7 +54,7 @@ controller.spawn({
 controller.hears('phrase, regex, or keyword to listen to', ['ambient', 'direct_message','direct_mention','mention'],function(bot,message) {
   bot.reply(message, "I'm alive!");
 });
-{% endgighlight %}
+{% endhighlight %}
 
 Первым аргументом `hears` может быть простая строка или регулярное выражение, которое соответствует тому, что вы хотите. Вторым аргументом является массив различных типов сообщений, которые бот может слушать. Теперь мы знаем все настройки, которые нужно поменять, чтобы бот реагировал на то, что мы хотим.
 
