@@ -6,7 +6,7 @@ image: /img/posts/botkit.jpg
 excerpt_separator: <!--more--> 
 ---
 
-*Перевод статьи <a href="http://www.nickhammond.com/botkit/" rel="nofollow noopener" target="_blank">Botkit</a> <a href="http://www.nickhammond.com" rel="nofollow noopener" target="_blank">Ника Хаммонда</a>*
+*Перевод статьи <a href="http://www.nickhammond.com/botkit/" rel="nofollow noopener" target="_blank">Botkit</a> <a href="http://www.nickhammond.com" rel="nofollow noopener" target="_blank">Ника Хаммонда</a>.*
 
 Я всегда был очарован простыми системами обмена сообщениями. Раньше, когда СМС были основной платформой сообщений, я работал в агентстве над созданием различных проектов на базе текста.<!--more--> 
 
