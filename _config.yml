@@ -7,15 +7,15 @@
 
 # Site settings
 title: Treancycle
-email: liudmila.khotina@gmail.com
+email: trean.mi@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Блог про CSS, JavaScript, Linux и прочие близкие темы.
 baseurl: "" # the subpath of your site, e.g. /blog
 imgurl: "/img/" # the subpath images
-url: "/" # the base hostname & protocol for your site
+url: "http://www.treancycle.ru" # the base hostname & protocol for your site
 twitter_username: _trean_
 github_username: trean
-facebook_username: liudmila.khotina
+facebook_username: mila.vasnetsova
 permalink: /:categories/:title/
 
 # Build settings
