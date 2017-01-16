@@ -16,7 +16,7 @@ url: "http://www.treancycle.ru" # the base hostname & protocol for your site
 twitter_username: _trean_
 github_username: trean
 facebook_username: mila.vasnetsova
-permalink: /:/categories/:title/
+permalink: /:categories/:title/
 
 # Build settings
 markdown: kramdown
